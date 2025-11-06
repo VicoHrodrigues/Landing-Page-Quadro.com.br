@@ -25,6 +25,7 @@ nav {
     display: flex;
     justify-content: center;
     border: 3px solid green;
+    margin: 0 auto;
 
     text-align: center;
 }
