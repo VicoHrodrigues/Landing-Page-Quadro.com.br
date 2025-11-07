@@ -21,6 +21,7 @@ body {
 
 
 nav {
+    /* border: 3px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,7 +88,6 @@ h2 {
 }
 
 .container--marcas--item {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,15 +100,13 @@ h2 {
 }
 
 .container--instagram--icon {
-
     width: 30px;
     margin: 20px;
 
-    border: 2px solid rgb(178, 81, 45);
+    /* border: 2px solid rgb(178, 81, 45); */
 }
 
 .container--site--icon {
-
     width: 40px;
     margin: 20px;
 }
@@ -137,12 +135,29 @@ p {
     margin-top: 0%;
 
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
+}
+
+.container--marcas--redes-social {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+
+    /* border: 2px solid #003e6d; */  
+}
+
+.link--instagra {   
+    width: 20px;
+    margin-right: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
 }
 
 
 .button {
-
     border: 0;
     border-radius: 18px;
     padding: 10px 18px;
@@ -159,7 +174,6 @@ p {
 }
 
 .button:hover {
-
     background-color: white;
     color: black;
 }
@@ -180,17 +194,52 @@ footer {
 }
 
 
-.teste {
-    display: flex;
-    align-items: center;
-    justify-content: baseline;
+@media (max-width: 932px) {
 
-    border: 2px solid #003e6d;
+    body {
+        background: url('./assets/background-landingpage-mobile.jpg') no-repeat center/cover;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        text-align: centercs;
+    }
+
+    #titulo-page {
+        padding: 0;
+        margin: 10%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #language-page {
+        margin: 0;
+    }
+
+    .container-marcas-fileira-superior {
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .container-marcas-fileira-inferior {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .container--marcas--item {
+        margin-top: 15%;
+    }
+
+    #text-rodape {
+        font-size: 15px;
+    }
+   
+       
 }
-
-.link--instagra {
-    width: 60px;
-
-    display: flex;
-    align-items: center;
-}
+    
