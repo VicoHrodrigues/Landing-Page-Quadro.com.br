@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
 }
 
 body {
     background: url('./assets/background-landingpage-desktop.jpg') no-repeat center/cover;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    max-width: 100%;
     background-color: rgb(30, 30, 30);
     
 }
 
+
 nav {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,18 +31,25 @@ nav {
 
 #titulo-page {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    border: 3px solid green;
+    /* border: 3px solid green; */
     margin: 0 auto;
+    padding-left: 15%;
 
     text-align: center;
+}
+
+h2 {
+    font-weight: 400;
 }
 
 #language-page {
     display: flex;
     gap: 30px;
-    margin-right: 5%;
+    margin-right: 10%;
 }
+
 
 #lang-icon-brasil {
     width: 40px;
@@ -50,28 +65,66 @@ nav {
     flex-direction: column;
 }
 
+
+
 .container-marcas-fileira-superior {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 5%;
-    margin: 2% 0;
+    gap: 10%;
+    
 
-    border: 3px solid cyan;
+    /* border: 3px solid cyan; */
 }
 
 .container-marcas-fileira-inferior {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 5%;
-    margin: 5% 0;
+    gap: 10%;
+
+    margin-top: 4%;
     
-    border: 3px solid purple;
+}
+
+.container--marcas--item {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 350px;
+    height: 320px;
+
+    /* border: 2px solid red; */
+}
+
+.container--instagram--icon {
+
+    width: 30px;
+    margin: 20px;
+
+    border: 2px solid rgb(178, 81, 45);
+}
+
+.container--site--icon {
+
+    width: 40px;
+    margin: 20px;
+}
+
+
+.container--marcas--item--textbutton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 2% 0;
 }
 
 .logos-marcas {
-    width: 270px;
+    width: 350px;
     height: auto;
 }
 
@@ -82,5 +135,63 @@ nav {
 
 p {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 0%;
+
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+.button {
+
+    border: 0;
+    border-radius: 18px;
+    padding: 10px 18px;
+
+    background-color: #003e6d;
+    font-weight: 300;
+    margin-top: 2%;
+    text-align: center;
+    text-decoration: none;
+
+    transition: background-color 0.7s;
+
+    
+}
+
+.button:hover {
+
+    background-color: white;
+    color: black;
+}
+
+footer {
+    background-color: black;
+    height: 100px;
+    margin: 90px 0 0 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-rodape {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+.teste {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+
+    border: 2px solid #003e6d;
+}
+
+.link--instagra {
+    width: 60px;
+
+    display: flex;
+    align-items: center;
 }
