@@ -194,6 +194,10 @@ footer {
 }
 
 
+
+/* Mobile responsivo */
+
+
 @media (max-width: 932px) {
 
     body {
@@ -209,6 +213,10 @@ footer {
     #titulo-page {
         padding: 0;
         margin: 10%;
+    }
+
+    h1 {
+        font-size: 35px;
     }
 
     h2 {
