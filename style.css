@@ -4,11 +4,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: white;
 }
 
 body {
@@ -16,12 +11,16 @@ body {
     height: 100%;
     max-width: 100%;
     background-color: rgb(30, 30, 30);
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
     
 }
 
 
 nav {
-    /* border: 3px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,11 +28,10 @@ nav {
     height: 15rem;
 }
 
-#titulo-page {
+.titulo-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: 3px solid green; */
     margin: 0 auto;
     padding-left: 15%;
 
@@ -44,18 +42,18 @@ h2 {
     font-weight: 400;
 }
 
-#language-page {
+.language-page {
     display: flex;
     gap: 30px;
     margin-right: 10%;
 }
 
 
-#lang-icon-brasil {
+.lang-icon-brasil {
     width: 40px;
 }
 
-#lang-icon-eua {
+.lang-icon-eua {
     width: 40px;
 }
 
@@ -65,16 +63,12 @@ h2 {
     flex-direction: column;
 }
 
-
-
 .container-marcas-fileira-superior {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 10%;
     
-
-    /* border: 3px solid cyan; */
 }
 
 .container-marcas-fileira-inferior {
@@ -84,7 +78,6 @@ h2 {
     gap: 10%;
 
     margin-top: 4%;
-    
 }
 
 .container--marcas--item {
@@ -95,15 +88,11 @@ h2 {
 
     width: 350px;
     height: 320px;
-
-    /* border: 2px solid red; */
 }
 
 .container--instagram--icon {
     width: 30px;
     margin: 20px;
-
-    /* border: 2px solid rgb(178, 81, 45); */
 }
 
 .container--site--icon {
@@ -141,9 +130,7 @@ p {
 .container--marcas--redes-social {
     display: flex;
     align-items: center;
-    justify-content: baseline;
-
-    /* border: 2px solid #003e6d; */  
+    justify-content: baseline; 
 }
 
 .link--instagra {   
@@ -153,7 +140,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
 }
 
 
@@ -167,10 +153,9 @@ p {
     margin-top: 2%;
     text-align: center;
     text-decoration: none;
+    color: white;
 
     transition: background-color 0.7s;
-
-    
 }
 
 .button:hover {

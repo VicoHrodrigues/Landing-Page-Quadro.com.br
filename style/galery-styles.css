@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+}
+
+header {
+
+    text-align: center;
+    margin: 90px;
+}
+
+/* Layout Masonry (irregular) - estilo Pinterest */
+.section-img {
+    /* Opção 1: CSS Columns (mais simples, funciona bem) */
+
+    column-count: 4;
+    column-gap: 6px;
+    padding: 4px;
+}
+
+.section--img--item {
+    
+    
+    width:100%;
+    display: block;
+    margin-bottom: 30px;
+    break-inside: avoid; /* Evita que a imagem seja cortada entre colunas */
+    /* border: 3px solid red; */
+    object-fit: cover;
+    page-break-inside: avoid; /* Compatibilidade com navegadores mais antigos */
+}
+
+#text-rodape {
+
+    font-size: 15px;
+    text-align: center;
+    margin: 60px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .section-img {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-img {
+        column-count: 1;
+    }
+}
