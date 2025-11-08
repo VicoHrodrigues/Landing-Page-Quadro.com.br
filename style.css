@@ -195,7 +195,7 @@ footer {
         text-align: centercs;
     }
 
-    #titulo-page {
+    .titulo-page {
         padding: 0;
         margin: 10%;
     }
@@ -208,7 +208,7 @@ footer {
         font-size: 20px;
     }
 
-    #language-page {
+    .language-page {
         margin: 0;
     }
 
