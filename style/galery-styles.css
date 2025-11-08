@@ -21,9 +21,8 @@ header {
     margin: 90px;
 }
 
-/* Layout Masonry (irregular) - estilo Pinterest */
+
 .section-img {
-    /* Opção 1: CSS Columns (mais simples, funciona bem) */
 
     column-count: 4;
     column-gap: 6px;
@@ -44,12 +43,14 @@ header {
 
 #text-rodape {
 
-    font-size: 15px;
+    font-size: 13px;
     text-align: center;
     margin: 60px;
 }
 
-/* Responsividade para telas menores */
+
+/* Mobile */
+
 @media (max-width: 768px) {
     .section-img {
         column-count: 2;
