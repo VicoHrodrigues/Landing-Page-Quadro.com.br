@@ -213,7 +213,8 @@ footer {
     }
 
     h1 {
-        font-size: 35px;
+        font-size: 26px;
+        margin-top: 10%;
     }
 
     h2 {
@@ -231,6 +232,12 @@ footer {
 
     }
 
+    .container-marcas-fileira-meio {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
     .container-marcas-fileira-inferior {
         flex-direction: column;
         align-items: center;
@@ -238,11 +245,12 @@ footer {
     }
 
     .container--marcas--item {
-        margin-top: 15%;
+        margin-top: 0%;
     }
 
     #text-rodape {
         font-size: 15px;
+        margin-bottom: 7%;
     }
    
        
