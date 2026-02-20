@@ -15,7 +15,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: white;
+    color: white; 
     
 }
 
@@ -69,13 +69,22 @@ h2 {
     
 }
 
-.container-marcas-fileira-inferior {
+.container-marcas-fileira-meio {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 10%;
 
     margin-top: 4%;
+}
+
+.container-marcas-fileira-inferior {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+
+    margin-top: 1%;
 }
 
 .container--marcas--item {
@@ -109,6 +118,11 @@ h2 {
 
 .logos-marcas {
     width: 350px;
+    height: auto;
+}
+
+#logo-marca {
+    width: 250px;
     height: auto;
 }
 
