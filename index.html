@@ -3,140 +3,370 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/Favicon-logo-ff-preto.png" type="image/png">
     <meta name="description" content="Grupo Quadro - O lab mais completo e moderno no Brasil. Descubra nossas marcas: FastFrame (moldurarias FineArt), Caffé FastFrame (café com arte), Moderna Quadros, Deposter e Empório dos Quadros.">
-    <link rel="stylesheet" href="./style/style.css">
-    <title>GRUPO QUADRO</title>
+    <link rel="icon" href="./src/assets/Favicon-logo-ff-preto.png" type="image/png">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <title>Grupo Quadro</title>
 
     <!-- Analytics Web Site Vercel -->
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
       </script>
     <script defer src="/_vercel/insights/script.js"></script>
+    
 </head>
 <body>
-
     <header>
-        <nav>
-            <div class="titulo-page">
-                <!-- <h1>EM BREVE!</h1> -->
-                <h1>O LAB MAIS COMPLETO E MODERNO NO BRASIL.</h1>
-            </div>
-            
-            <div class="language-page">
-                <a href="./index.html"><img src="./assets/bandeira-do-brasil.png" alt="Bandeira do Brasil" class="lang-icon"></a>
-                <a href="./pages/ingles"><img src="./assets/estados-unidos-da-america.png" alt="Bandeira do Estados Unidos" class="lang-icon"></a>
-                <a href="./pages/espanhol"><img src="./assets/espanha.png" alt="Bandeira da Espanha" class="lang-icon"></a>
-                <a href="./pages/italiano"><img src="./assets/italia.png" alt="Bandeira da Itália" class="lang-icon"></a>
-            </div>
-        </nav>
-       
+        <section class="container-linguage">
+            <select name="language" class="lang--linguage--select">
+                <option value="pt" selected>PT-BR</option>
+                <option value="en-us">EN-US</option>
+                <option value="es-es">ES-ES</option>
+                <option value="it-it">IT-IT</option>
+                <option value="fr-fr">FR-FR</option>
+            </select>
+        </section>
+
+        <div class="container-background">
+            <img src="./src/assets/background_base.jpg" alt="" class="container--background--img">
+             <div class="container--background--text">
+                <h1 class="container--background--text--titulo">O MAIOR ECOSSISTEMA BRASILEIRO DE <br><span class="destaque">QUADROS E DECORAÇÃO</span></h1>
+             </div>
+
+             <div class="container--background--text--mobile">
+                <h1 class="container--background--text--titulo">O MAIOR ECOSSISTEMA <br><span class="destaque">BRASILEIRO DE QUADROS E <br>DECORAÇÃO</span></h1>
+             </div>
+
+             <div class="container--background--faixalogos">
+                <div class="container--background--faixalogos--item">
+                    <!-- <img src="./src/assets/logos/LOGO-FASTFRAME-BRANCO.png" alt="fastframe" class="container--background--faixalogos--item--logos">
+                    <img src="./src/assets/logos/LOGO-FASTFRAME-FRANCHISING.png" alt="fastframe franchising" class="container--background--faixalogos--item--logos">
+                    <img src="./src/assets/logos/LOGO-BRANCO_CAFFE-FASTFRAME.png" alt="caffé fastframe" class="container--background--faixalogos--item--logos">
+                    <img src="./src/assets/logos/MODERNA-QUADROS.png" alt="moderna quadros" class="container--background--faixalogos--item--logos">
+                    <img src="./src/assets/logos/DEPOSTER-BRANCO.png" alt="deposter content décor" class="container--background--faixalogos--item--logos">
+                    <img src="./src/assets/logos/logo-emporio-branco.png" alt="empório dos quadros" class="container--background--faixalogos--item--logos"> -->
+                    <img src="./src/assets/regua de logos/regua_de_logos.png" alt="Régua de logos" class="container--background--faixalogos--item--logos">
+                    <img src="./src/assets/regua_logo_mobile/regua_logo_mobile.png" alt="Régua de logos" class="container--background--faixalogos--item--logos--mobile">
+                </div>
+             </div>
+        </div>
     </header>
+
     <main>
 
-        <section class="container-marcas">
-            <div class="container-marcas-fileira-superior">
-                <div class="container--marcas--item">
-                    <a href="https://www.fastframe.com.br/"><img src="./assets/LOGO-FASTFRAME-BRANCO.png" alt="Logo FastFrame Principal" class="logos-marcas"></a>
-                    <div class="container--marcas--item--textbutton">
-                        <p>A maior rede de moldurarias especializadas em FineArt.</p>
-                        <div class="container--marcas--redes-social">
-                            <a href="https://www.instagram.com/fastframe/" target="_blank" class="link--instagra"><img src="./assets/instagram-circle.png" alt="icone--instagram" class="container--instagram--icon"></a>
-                            <p>@fastframe</p>
-                        </div>
-                        <a href="./pages/galery-fastframe" target="_blank" class="button">Confira as imagens</a>
-                    </div>
-                </div>
-                
-                <div class="container--marcas--item">
-                    <a href="https://www.franquiafastframe.com.br/"><img src="./assets/LOGO-FASTFRAME-FRANCHISING.png" alt="Logo FastFrame Franquia" class="logos-marcas"></a>
-                    <div class="container--marcas--item--textbutton">
-                        <p>Mais de 50 lojas em território nacional.</p>
-                        <div class="container--marcas--redes-social">
-                            <a href="https://www.instagram.com/franchising_fastframe/" target="_blank" class="link--instagra"><img src="./assets/instagram-circle.png" alt="icone--instagram" class="container--instagram--icon"></a>
-                            <p>@franchising_fastframe</p>
-                        </div>
-                        <a href="./pages/galery-franchising" target="_blank" class="button">Confira as imagens</a>
-                    </div>
-                    
-                </div>
-                
-                <div class="container--marcas--item">
-                    <a href="https://www.caffefastframe.com.br/"><img src="./assets/LOGO-BRANCO_CAFFE-FASTFRAME.png" alt="Logo Caffé FastFrame" class="logos-marcas"></a>
-                    <div class="container--marcas--item--textbutton">
-                        <p class="contato--redes">Café com arte em um só lugar.</p>
-                        <div class="container--marcas--redes-social">
-                            <a href="https://www.instagram.com/caffefastframe/" target="_blank" class="link--instagra"><img src="./assets/instagram-circle.png" alt="icone--instagram" class="container--instagram--icon"></a>
-                            <p>@caffefastframe</p>
-                        </div>
-                        <a href="./pages/galery-caffe-fastframe" target="_blank" class="button">Confira as imagens</a>
-                    </div>
-                    
-                </div>
-                
-            </div> 
-            <div class="container-marcas-fileira-meio">
-                <div class="container--marcas--item">
-                    <a href="https://modernaquadros.com.br/"><img src="./assets/MODERNA-QUADROS.png" alt="Logo Moderna Quadros" class="logos-marcas"></a>
-                    <div class="container--marcas--item--textbutton">
-                        <p>E-commerce de venda de quadros.</p>
-                        <div class="container--marcas--redes-social">
-                            <a href="https://www.instagram.com/_modernaquadros_/" target="_blank" class="link--instagra"><img src="./assets/instagram-circle.png" alt="icone--instagram" class="container--instagram--icon"></a>
-                            <p>@_modernaquadros_</p>
-                        </div>
-                        <a href="./pages/galery-moderna" target="_blank" class="button">Confira as imagens</a>
-                    </div>
-                    
-                </div>
-                
-                <div class="container--marcas--item">
-                    <a href="https://deposter.com.br/"><img src="./assets/DEPOSTER-BRANCO.png" alt="Logo Deposter Content Décor" class="logos-marcas"></a>
-                    <div class="container--marcas--item--textbutton">
-                        <p>E-commerce de venda de quadros.</p>
-                        <div class="container--marcas--redes-social">
-                            <a href="https://www.instagram.com/_deposter_/" target="_blank" class="link--instagra"><img src="./assets/instagram-circle.png" alt="icone--instagram" class="container--instagram--icon"></a>
-                            <p>@_deposter_</p>
-                        </div>
-                        <a href="./pages/galery-deposter" target="_blank" class="button">Confira as imagens</a>
-                    </div>
-                    
-                </div>
-                
-                <div class="container--marcas--item">
-                    <a href="https://www.emporiodosquadros.com.br"><img src="./assets/logo-emporio-branco.png" alt="Logo Empório dos Quadros" class="logos-marcas"></a>
-                    <div class="container--marcas--item--textbutton">
-                        <p>E-commerce de venda de quadros com <br>tematica religiosa.</p>
-                        
-                        <div class="container--marcas--redes-social">
-                            <a href="https://www.instagram.com/emporio.dos.quadros/" target="_blank" class="link--instagra"><img src="./assets/instagram-circle.png" alt="icone--instagram" class="container--instagram--icon"></a>
-                            <p>@emporio.dos.quadros</p>
-                        </div>
-                        <a href="./pages/galery-emporiodosquadros" target="_blank" class="button">Confira as imagens</a>
-                        
-                    </div>
-                    
-                </div>
-                
+        <!-- SESSÃO FASTFRAME -->
+
+        <section class="section-global">
+
+            <div class="section--colum--B--mobile">
+                <div>
+                    <img src="./src/assets/sessao_fastframe/foto_fachada.png" alt="Foto da fachada nova da unidade fastframe gabriel" class="section--colum--B--img section--colum--B--img--gabriel">
+                </div>  
             </div>
 
-            <div class="container-marcas-fileira-inferior">
-                <div class="container--marcas--item">
-                    <div class="container--marcas--item--textbutton">
-                        <h1>EM BREVE</h1>
-                    </div>
-                    <img src="./assets/LOGO PEACH LAB - CLARO.png" alt="Logo Peach Lab" class="logos-marcas" id="logo-marca">
-                    
+            <div class="section--colum--A">
+                <div class="section--colum--text">
+                    <img src="./src/assets/logos/logos_pretos/LOGO_FASTFRAME_PRETO.png" alt="logo fastframe" class="section--colum--logo">
+                    <p>A FastFrame é referência nacional em molduraria e impressão fine art, com mais de 50 lojas espalhadas pelo Brasil. 
+                    Especialista em transformar imagens, obras e memórias em peças de alto padrão, a marca une técnica, curadoria e acabamento preciso. 
+                    Reconhecida pela variedade de molduras e qualidade dos materiais, a FastFrame desenvolve projetos personalizados que dialogam com arquitetura, 
+                    design e identidade de cada espaço. Atende clientes finais, artistas, arquitetos e empresas, com soluções para residências, ambientes corporativos, 
+                    exposições e eventos.</p>
+
+                    <p class="section--colum--tag">@fastframe | www.fastframe.com.br
+                        <br> | rodrigo.viegas@fastframe.com.br
+                    </p>
                 </div>
-                
+
+                <!-- Sessão dos botões (a href) -->
+
+                <div class="section--buttons--father">
+
+                    <div class="section--buttons--base">
+                        <a href="https://fastframe.com.br/seja-um-franqueado" target="_blank"class="section--buttons--item--upper">Quero ser um <br>Franqueado</a>
+                        <a href="https://fastframe.com.br/arte-e-inspiracao/fotografos" target="_blank" class="section--buttons--item--upper">Quero ser um <br>Artista Parceiro</a>
+                        <a href="https://form.jotform.com/260718235754057" target="_blank" class="section--buttons--item--upper">Quero ser um <br>Fornecedor</a>
+                    </div>
+    
+                    <div class="section--buttons--base">
+                        <a href="https://form.jotform.com/260705085659060" target="_blank" class="section--buttons--item--low">Trabalhe Conosco</a>
+                        <a href="https://www.linkedin.com/company/fastframe-moldura-na-hora-brasil/" target="_blank" class="section--buttons--item--low">LinkedIn</a>
+                        <a href="https://quadro.com.br/pages/galery-fastframe" target="_blank" class="section--buttons--item--low">Galeria de Fotos</a>
+                    </div>
+
+                </div>
+        
+                <!-- Fim da sessão dos botões (a href) -->
+
+            </div>
+
+            <div class="section--colum--B">
+                <div>
+                    <img src="./src/assets/sessao_fastframe/foto_fachada.png" alt="Foto da fachada nova da unidade fastframe gabriel" class="section--colum--B--img">
+                </div>  
             </div>
         </section>
+
+        <!-- FIM DA SESSÃO FASTFRAME -->
+
+        <hr class="linha-divisora-section">
+
+        <!-- SESSÃO FASTFRAME FRANCHISING -->
+
+        <section class="section-global">
+
+            <div class="section--colum--B--mobile">
+                <div>
+                    <img src="./src/assets/sessao_franquia/unidade_franquia.png" alt="Foto da fachada nova da unidade fastframe gabriel" class="section--colum--B--img">
+                </div>  
+            </div>
+            <div class="section--colum--A">
+                <div class="section--colum--text">
+                    <img src="./src/assets/logos/logos_pretos/LOGO_FASTFRAME_FRANCHISING_PRETO.png" alt="logo fastframe franchising." class="section--colum--logo">
+                    <p>A FastFrame Franchising é o braço de franquias da FastFrame, marca referência nacional em molduraria e impressão fine art, com mais de 50 lojas em operação no Brasil. 
+                        O modelo une um mercado consolidado, marca reconhecida e processos estruturados, oferecendo ao franqueado segurança, padrão e suporte contínuo.
+                        Com foco em rentabilidade e escalabilidade, a FastFrame Franchising oferece know-how completo, desde implantação e treinamento até apoio comercial, marketing e operações. 
+                        O negócio atende consumidores finais, profissionais criativos e empresas, com soluções personalizadas e alto valor percebido.</p>
+
+                    <p class="section--colum--tag">@franchising_fastframe  | www.fastframe.com.br
+                        <br> | amanda.jesus@fastframe.com.br
+                    </p>
+                </div>
+
+                <!-- Sessão dos botões (a href) -->
+
+                <div class="section--buttons--father">
+
+                    <div class="section--buttons--base">
+                        <a href="https://fastframe.com.br/seja-um-franqueado" target="_blank" class="section--buttons--item--upper">Quero ser um <br>Franqueado</a>
+                        <a href="#" class="section--buttons--item--upper">Quero ser um <br>Fornecedor</a>
+                        <a href="https://form.jotform.com/260705085659060" target="_blank" class="section--buttons--item--low">Trabalhe Conosco</a>
+                        <a href="https://www.linkedin.com/company/fastframe-moldura-na-hora-brasil/" target="_blank" class="section--buttons--item--low">LinkedIn</a>
+                        <a href="https://quadro.com.br/pages/galery-franchising" target="_blank" class="section--buttons--item--low">Galeria de Fotos</a>
+                    </div>
+    
+
+                </div>
+
+                <!-- Fim da sessão dos botões (a href) -->
+
+            </div>
+
+            <div class="section--colum--B">
+                <div>
+                    <img src="./src/assets/sessao_franquia/unidade_franquia.png" alt="Foto da fachada nova da unidade fastframe gabriel" class="section--colum--B--img">
+                </div>  
+            </div>
+        </section>
+
+        <!-- FIM DA SESSÃO FASTFRAME FRANCHISING -->
+
+        <hr class="linha-divisora-section">
+
+        <!-- SESSÃO CAFFÉ FASTFRAME -->
+
+        <section class="section-global">
+            <div class="section--colum--A">
+
+                <div class="section--colum--B--mobile">
+                    <div>
+                        <img src="./src/assets/sessao_caffe_fastframe/section_caffe_fastframe.png" alt="Foto da fachada nova da unidade fastframe gabriel" class="section--colum--B--img">
+                    </div>  
+                </div>
+                <div class="section--colum--text">
+                    <img src="./src/assets/logos/logos_pretos/LOGO_PRETO_CAFFE_FASTFRAME.png" alt="logo caffé fastframe" class="section--colum--logo logo_caffe">
+                    <p>O Caffé FastFrame é a extensão sensorial da FastFrame, unindo café de qualidade, gastronomia leve e um ambiente imerso em arte e design. Mais do que uma cafeteria, 
+                        o espaço foi criado para proporcionar uma experiência completa, onde cada detalhe conversa com criatividade e estética. Integrado às lojas FastFrame, o Caffé FastFrame 
+                        transforma a pausa do café em um momento de inspiração, convivência e conexão com a arte. Ideal para encontros, reuniões informais ou simplesmente para apreciar um bom 
+                        café cercado de boas ideias.</p>
+
+                    <p class="section--colum--tag"> @caffefastframe | www.caffefastframe.com.br
+                        <br> | fernando.guimaraes@fastframe.com.br
+                    </p>
+                </div>
+
+                <!-- Sessão dos botões (a href) -->
+
+                <div class="section--buttons--father">
+
+                    <div class="section--buttons--base">
+                        <a href="#" class="section--buttons--item--upper">Quero ser um <br>Franqueado</a>
+                        <a href="#" class="section--buttons--item--upper">Quero ser um <br>Fornecedor</a>
+                        <a href="https://form.jotform.com/260705085659060" target="_blank" class="section--buttons--item--low">Trabalhe Conosco</a>
+                        <a href="https://www.linkedin.com/company/fastframe-moldura-na-hora-brasil/" target="_blank" class="section--buttons--item--low">LinkedIn</a>
+                        <a href="https://quadro.com.br/pages/galery-caffe-fastframe" target="_blank" class="section--buttons--item--low">Galeria de Fotos</a>
+                    </div>
+
+                </div>
+
+                <!-- Fim da sessão dos botões (a href) -->
+
+            </div>
+
+            <div class="section--colum--B">
+                <div>
+                    <img src="./src/assets/sessao_caffe_fastframe/section_caffe_fastframe.png" alt="Foto da fachada nova da unidade fastframe gabriel" class="section--colum--B--img">
+                </div>  
+            </div>
+        </section>
+
+        <!-- FIM DA SESSÃO CAFFÉ FASTFRAME -->
+
+        <hr class="linha-divisora-section">
+
+        <!-- SESSÃO MODERNA QUADROS -->
+        <section class="section-global">
+
+            <div class="section--colum--B--mobile">
+                <div>
+                    <img src="./src/assets/sessao_moderna/section_moderna.png" alt="Foto da fachada nova da unidade fastframe gabriel" class="section--colum--B--img">
+                </div>  
+            </div>
+
+
+            <div class="section--colum--A">
+                <div class="section--colum--text">
+                    <img src="./src/assets/logos/logos_pretos/LOGO_MODERNA_PRETO.png" alt="logo Moderna Quadros" class="section--colum--logo">
+                    <p>A Moderna Quadros é uma marca focada em quadros prontos, com curadoria atual e linguagem contemporânea. O objetivo é simples: levar arte e design para o dia a dia, com peças 
+                        versáteis, bem-acabadas e prontas para transformar qualquer ambiente. Com coleções pensadas para diferentes estilos e espaços, a Moderna Quadros combina estética, praticidade 
+                        e preço acessível, atendendo quem busca renovar paredes de forma rápida e inteligente, sem abrir mão de qualidade.</p>
+
+                    <p class="section--colum--tag">_modernaquadros_ | www.modernaquadros.com.br
+                        <br> | rodrigo.viegas@fastframe.com.br
+                    </p>
+                </div>
+
+                <!-- Sessão dos botões (a href) -->
+
+                <div class="section--buttons--father">
+
+                    <div class="section--buttons--base">
+                        <a href="#" class="section--buttons--item--upper">Quero ser um <br>Artista Parceiro</a>
+                        <a href="https://form.jotform.com/260705085659060" target="_blank" class="section--buttons--item--low">Trabalhe Conosco</a>
+                        <a href="https://quadro.com.br/pages/galery-moderna" target="_blank" class="section--buttons--item--low">Galeria de Fotos</a>
+                    </div>
+
+                </div>
+
+                <!-- Fim da sessão dos botões (a href) -->
+
+            </div>
+
+            <div class="section--colum--B">
+                <div>
+                    <img src="./src/assets/sessao_moderna/section_moderna.png" alt="Foto da fachada nova da unidade fastframe gabriel" class="section--colum--B--img">
+                </div>  
+            </div>
+        </section>
+
+        <!-- FIM DA SESSÃO MODERNA QUADROS -->
+
+        <hr class="linha-divisora-section">
+
+        <!-- SESSÃO DESPOTER CONTENT DÉCOR -->
+        <section class="section-global">
+            <div class="section--colum--B--mobile">
+                <div>
+                    <img src="./src/assets/sessao_deposter/section_deposter_content.png" alt="Foto da fachada nova da unidade fastframe gabriel" class="section--colum--B--img">
+                </div>  
+            </div>
+            <div class="section--colum--A">
+                <div class="section--colum--text">
+                    <img src="./src/assets/logos/logos_pretos/LOGO_DEPOSTER_PRETA.png" alt="logo Deposter Content Décor" class="section--colum--logo">
+                    <p>A Deposter Content Décor é uma marca especializada em conteúdo visual decorativo, criada para transformar ambientes por meio de imagens impactantes, linguagem contemporânea e 
+                        curadoria estratégica. Cada peça nasce com propósito: comunicar, ambientar e reforçar identidade. Com foco em projetos residenciais, corporativos e comerciais, a Deposter 
+                        desenvolve coleções que dialogam com tendências, comportamento e design, oferecendo soluções práticas e versáteis para quem quer renovar espaços com personalidade.</p>
+
+                    <p class="section--colum--tag">@_deposter_ | www.deposter.com.br
+                        <br> | rodrigo.viegas@fastframe.com.br
+                    </p>
+                </div>
+
+                <!-- Sessão dos botões (a href) -->
+
+                <div class="section--buttons--father">
+
+                    <div class="section--buttons--base">
+                        <a href="#" class="section--buttons--item--upper">Quero ser um <br>Artista Parceiro</a>
+                        <a href="https://form.jotform.com/260705085659060" target="_blank" class="section--buttons--item--low">Trabalhe Conosco</a>
+                        <a href="https://www.linkedin.com/company/deposter-quadros-e-decora%C3%A7%C3%A3o/" target="_blank" class="section--buttons--item--low">LinkedIn</a>
+                        <a href="https://quadro.com.br/pages/galery-deposter" target="_blank" class="section--buttons--item--low">Galeria de Fotos</a>
+                    </div>
+    
+                </div>
+
+                <!-- Fim da sessão dos botões (a href) -->
+
+            </div>
+
+            <div class="section--colum--B">
+                <div>
+                    <img src="./src/assets/sessao_deposter/section_deposter_content.png" alt="Foto da fachada nova da unidade fastframe gabriel" class="section--colum--B--img">
+                </div>  
+            </div>
+        </section>
+
+        <!-- FIM DA SESSÃO DEPOSTER CONTENT DÉCOR -->
+        <hr class="linha-divisora-section">
+        <!-- SESSÃO EMPÓRIO DOS QUADROS -->
+        <section class="section-global">
+
+            <div class="section--colum--B--mobile">
+                <div>
+                    <img src="./src/assets/sessao_emporio/section_emporio_dos_quadros.png" alt="Foto da fachada nova da unidade fastframe gabriel" class="section--colum--B--img">
+                </div>  
+            </div>
+            
+
+            <div class="section--colum--A">
+                <div class="section--colum--text">
+                    <img src="./src/assets/logos/logos_pretos/LOGO_EMPORIO_PRETA.png" alt="logo Empório dos Quadros" class="section--colum--logo">
+                    <p>O Empório dos Quadros é uma loja online de quadros decorativos com um portfólio variado e milhares de estampas para escolher, focada em peças prontas para renovar paredes com 
+                        estilo e personalidade. A marca oferece opções que vão de arte figurativa e temática religiosa a composições modernas e abstratas, com diversos formatos e conjuntos disponíveis 
+                        no e-commerce.
+
+                        <br><br>Com condições de pagamento flexíveis, como parcelamento em até 10x e opções no PIX, o Empório busca unir acessibilidade e estética para atender clientes que querem decorar 
+                        casas, escritórios e ambientes comerciais de maneira prática.</p>
+
+                    <p class="section--colum--tag">@emporio.dos.quadros | www.emporiodoquadro.com.br 
+                        <br> | rodrigo.viegas@fastframe.com.br
+                    </p>
+                </div>
+
+                <!-- Sessão dos botões (a href) -->
+
+                <div class="section--buttons--father">
+
+                    <div class="section--buttons--base">
+                        <a href="#" class="section--buttons--item--upper">Quero ser um <br>Artista Parceiro</a>
+                        <a href="https://form.jotform.com/260705085659060" target="_blank" class="section--buttons--item--low">Trabalhe Conosco</a>
+                        <a href="https://quadro.com.br/pages/galery-emporiodosquadros" target="_blank" class="section--buttons--item--low">Galeria de Fotos</a>
+                    </div>
+
+
+                </div>
+
+                <!-- Fim da sessão dos botões (a href) -->
+
+            </div>
+
+            <div class="section--colum--B">
+                <div>
+                    <img src="./src/assets/sessao_emporio/section_emporio_dos_quadros.png" alt="Foto da fachada nova da unidade fastframe gabriel" class="section--colum--B--img">
+                </div>  
+            </div>
+        </section>
+        <!-- FIM DA SESSÃO EMPÓRIO DOS QUADROS -->
+
         
 
     </main>
 
     <footer>
-        <h1 id="text-rodape">© 2025 FASTFRAME | MOLDURA NA HORA LTDA.</h1>
-
+        <hr class="linha-divisora">
+        <p class="roda-pe">© 2026 FASTFRAME | MOLDURA NA HORA LTDA.</p>
     </footer>
+    
+    <script src="src/js/lang-switch.js"></script>
 </body>
 </html>

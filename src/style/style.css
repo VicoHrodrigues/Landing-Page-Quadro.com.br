@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --color-primare-text: white;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sessão Banner Entrada */
+
+.container-linguage {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.lang--linguage--select {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 9em;
+    height: 3em;
+
+    text-align: center;
+    color: white;
+
+    /* margin-left: 115em; */
+    margin-top: 5em;
+
+    padding: 0 1rem;
+
+} 
+
+.lang--linguage--select--icon {
+    width: 3rem;
+}
+
+
+.container--background--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    
+}
+
+
+.container-background {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container--background--text {
+    position: absolute;
+    margin-top: 17%;
+    width: 100%;
+
+    color: var(--color-primare-text);
+
+    
+    text-align: center;
+
+}
+
+.container--background--text h1 {
+
+    font-size: 70px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    
+}
+
+.destaque {
+    font-weight: 600;
+    font-style: normal;
+}
+
+.container--background--faixalogos {
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 16vh;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.container--background--faixalogos--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: min(100%, 90rem);
+}
+
+.container--background--faixalogos--item--logos,
+.container--background--faixalogos--item--logos--mobile {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sessão das marcas */
+
+.section-global {
+
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+
+}
+
+.section--colum--A {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7% 3% 10% 5%;
+    padding: 0 8rem;
+
+    width: 55rem;
+
+    
+}
+
+.section--colum--text {
+    text-align: justify;
+}
+
+.section--colum--logo {
+    width: 80%;
+    margin: 1% 0 7% 0;
+}
+
+.logo_caffe {
+    width: 60%;
+    margin: 10% 0 10% 0;
+}
+
+.section--colum--tag {
+    margin: 8% 0 8% 0;
+    
+}
+
+/* Configuração de todos os botões da página (a href) */
+
+.section--buttons--father {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+    width: 100%;
+    
+}
+
+.section--buttons--base {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+ 
+}
+
+.section--buttons--item--upper {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    text-decoration: none;
+    color:black;
+    white-space: normal;
+    text-align: center;
+    display: inline-block;
+
+    border: 1px solid black;
+    border-radius: 30px;
+
+    width: 171px;
+    height: 3rem;
+    padding: 5px;
+
+    transition: all 0.3s ease;
+
+}
+
+.section--buttons--item--low {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    text-decoration: none;
+    color:black;
+    white-space: normal;
+    text-align: center;
+    display: inline-block;
+
+    border: 1px solid black;
+    border-radius: 30px;
+
+    width: 171px;
+    height: 3rem;
+    padding: 13px;
+
+    transition: all 0.3s ease;
+
+}
+
+.section--buttons--item--upper:hover, 
+.section--buttons--item--low:hover {
+
+    background-color: rgb(234, 234, 234);
+    color: rgb(0, 0, 0);
+}
+
+/* Fim da sessão de dos botões (a href) */
+
+/* Sessão lateral de imagem */
+.section--colum--B {
+
+    display: flex;
+    justify-content: center;
+    width: 55rem;
+
+}
+
+.section--colum--B--img {
+
+    width: 105%;
+    max-width: 49.375rem;
+    padding: 18% 28% 0% 0%;
+   
+   
+}
+
+.roda-pe {
+
+
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+
+    margin: 3rem 0;
+
+}
+
+.linha-divisora {
+    border: 0;                
+    border-top: 1px solid #333; 
+    margin: 40px 0;          
+    width: 100%;              
+}
+
+.linha-divisora-section {
+
+    border: 0;                
+    border-top: 2px solid #333; 
+    margin: 5rem 9%;          
+    width: 80%; 
+}
+
+
+/* Extensão mobile */
+
+@media (min-width: 731px) {
+
+    .section--colum--B--mobile {
+        display: none;
+    }
+
+    .container--background--text--mobile {
+        display: none;
+    }
+
+    .container--background--faixalogos--item--logos--mobile {
+        display: none;
+    }
+
+}
+
+
+
+@media (max-width: 730px) {
+
+    .container-linguage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    .container--background--faixalogos--item {
+    
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    .lang--linguage--select {
+        margin: 2.5rem 0 0;
+    }
+
+    .container--background--text h1 {
+
+        font-size: 18px;
+        margin-top: 5.5rem;
+
+    }
+
+    .container--background--text--mobile h1 {
+
+        font-size: 25px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        position: absolute;
+        margin-top: -105%;
+        width: 100%;
+    
+        color: var(--color-primare-text);
+        text-align: center;
+    }
+
+    .container--background--text {
+        display: none;
+    }
+
+    .container--background--img {
+
+        object-position: center 50%;
+        
+    }
+
+    .container--background--faixalogos--item--logos {
+        display: none;
+    }
+
+    .container--background--faixalogos--item--logos--mobile {
+       
+        display: block;
+        width: 23rem;
+    }
+
+    
+
+    .container--background--faixalogos {
+        bottom: 6rem;
+    }
+
+    .section-global {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section--colum--A {
+
+        width: 100%;
+        margin: 0;
+        padding: 2rem 2rem 0 2rem;
+
+        /* border: 1px solid red; */
+    }
+
+    .section--colum--text {
+        font-size: 12px;
+    }
+
+
+    .section--colum--logo {
+        width: 16rem;
+    }
+
+    .logo_caffe {
+        width: 10rem;
+    }
+
+
+
+    /* Sessão de botões Mobile */
+    .section--buttons--father {
+        flex-direction: row;
+    }
+
+    .section--buttons--item--upper {
+
+        font-size: 11px;
+        width: 150px;
+        height: 50px;
+        padding: 7px;
+        
+    }
+
+    .section--buttons--item--low {
+
+        font-size: 11px;
+        width: 150px;
+        height: 50px;
+        padding: 16px;
+
+    }
+
+    /* Container B imagem */
+
+    .section--colum--B{
+        display: none;
+    }
+
+    .section--colum--B--mobile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+    
+    .section--colum--B--img {
+        width: 350px;
+        max-width: 350px;
+        height: auto;
+
+        padding: 0;
+        margin: 1rem 0 0 0;
+        display: block;
+    }
+
+    .section--colum--B--img--gabriel {
+
+        margin-top: 15%;
+    }
+
+
+    .linha-divisora-section {
+        margin: 2.5rem 10%;
+    }
+
+    .roda-pe {
+
+        font-size: 14px;
+    }
+
+}
