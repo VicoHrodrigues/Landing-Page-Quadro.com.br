@@ -185,7 +185,7 @@ body {
     gap: 2rem;
     align-items: center;
 
-    width: 100%;
+    max-width: 100%;
     
 }
 
@@ -194,47 +194,30 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: clamp(0.5rem, 1vw, 1rem);
  
 }
 
-.section--buttons--item--upper {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 12px;
-    text-decoration: none;
-    color:black;
-    white-space: normal;
-    text-align: center;
-    display: inline-block;
-
-    border: 1px solid black;
-    border-radius: 30px;
-
-    width: 171px;
-    height: 3rem;
-    padding: 5px;
-
-    transition: all 0.3s ease;
-
-}
-
+.section--buttons--item--upper,
 .section--buttons--item--low {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    font-size: 12px;
+    font-size: clamp(0.65rem, 0.7vw, 0.75rem);
     text-decoration: none;
     color:black;
     white-space: normal;
     text-align: center;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
 
     border: 1px solid black;
     border-radius: 30px;
 
-    width: 171px;
-    height: 3rem;
-    padding: 13px;
+    width: clamp(8rem, 14vw, 11rem);
+    min-height: clamp(2.4rem, 4vw, 3rem);
+    padding: clamp(0.35rem, 0.8vw, 0.75rem) clamp(0.5rem, 1vw, 0.75rem);
 
     transition: all 0.3s ease;
 
@@ -281,7 +264,7 @@ body {
 .linha-divisora {
     border: 0;                
     border-top: 1px solid #333; 
-    margin: 40px 0;          
+    margin: 2.5rem 0;          
     width: 100%;              
 }
 
@@ -417,22 +400,12 @@ body {
         flex-direction: row;
     }
 
-    .section--buttons--item--upper {
-
-        font-size: 11px;
-        width: 150px;
-        height: 50px;
-        padding: 7px;
-        
-    }
-
+    .section--buttons--item--upper,
     .section--buttons--item--low {
-
-        font-size: 11px;
-        width: 150px;
-        height: 50px;
-        padding: 16px;
-
+        font-size: clamp(0.6rem, 2.8vw, 0.7rem);
+        width: clamp(7.5rem, 42vw, 9.4rem);
+        min-height: clamp(2.4rem, 12vw, 3.1rem);
+        padding: clamp(0.35rem, 1.8vw, 0.7rem) clamp(0.45rem, 2vw, 0.7rem);
     }
 
     /* Container B imagem */
