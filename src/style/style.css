@@ -77,7 +77,7 @@ body {
 
 .container--background--text {
     position: absolute;
-    margin-top: 17%;
+    margin-top: 20%;
     width: 100%;
 
     color: var(--color-primare-text);
@@ -138,10 +138,8 @@ body {
 .section-global {
 
     width: 100%;
-    height: 120vh;    
+    height: 100vh;    
     display: flex;
-
-    border: 1px solid red;
 
 }
 
@@ -149,10 +147,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 7% 3% 10% 5%;
-    padding: 0 8rem;
+    padding: 5rem 2rem 5rem 12rem;
 
-    width: 55rem;
+    width: 50%;
+    height: 91%;
 
     
 }
@@ -163,12 +161,12 @@ body {
 
 .section--colum--logo {
     width: 80%;
-    margin: 1% 0 7% 0;
+    margin: 5% 0 7% 0;
 }
 
 .logo_caffe {
     width: 60%;
-    margin: 10% 0 10% 0;
+    margin: 5% 0 10% 0;
 }
 
 .section--colum--tag {
@@ -186,6 +184,7 @@ body {
     gap: 2rem;
     align-items: center;
 
+    width: 120%;
     max-width: 100%;
     
 }
@@ -196,6 +195,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: clamp(0.5rem, 1vw, 1rem);
+
+    margin: 0 0 5% 0;
  
 }
 
@@ -218,7 +219,7 @@ body {
 
     width: clamp(8rem, 14vw, 11rem);
     min-height: clamp(2.4rem, 4vw, 3rem);
-    padding: clamp(0.35rem, 0.8vw, 0.75rem) clamp(0.5rem, 1vw, 0.75rem);
+
 
     transition: all 0.3s ease;
 
@@ -238,15 +239,17 @@ body {
 
     display: flex;
     justify-content: center;
-    width: 55rem;
+    /* width: 90%; */
+    min-width: 20%;
+    width: 50%;
+    padding: 6.5rem 8rem 5rem 1rem;
 
 }
 
 .section--colum--B--img {
 
-    width: 105%;
+    width: 95%;
     max-width: 49.375rem;
-    padding: 18% 28% 0% 0%;
    
    
 }
@@ -280,7 +283,7 @@ body {
 
 /* Extensão mobile */
 
-@media (min-width: 731px) {
+@media (min-width: 933px) {
 
     .section--colum--B--mobile {
         display: none;
@@ -298,7 +301,7 @@ body {
 
 
 
-@media (max-width: 730px) {
+@media (max-width: 932px) {
 
     .container-linguage {
         display: flex;
@@ -320,20 +323,14 @@ body {
         margin: 2.5rem 0 0;
     }
 
-    .container--background--text h1 {
-
-        font-size: 18px;
-        margin-top: 5.5rem;
-
-    }
 
     .container--background--text--mobile h1 {
 
-        font-size: 25px;
+        font-size: 28px;
         font-family: "Poppins", sans-serif;
         font-weight: 300;
         position: absolute;
-        margin-top: -105%;
+        margin-top: -125%;
         width: 100%;
     
         color: var(--color-primare-text);
@@ -376,7 +373,7 @@ body {
 
         width: 100%;
         margin: 0;
-        padding: 2rem 2rem 0 2rem;
+        padding: 0 2rem 0 2rem;
 
         /* border: 1px solid red; */
     }
@@ -403,9 +400,9 @@ body {
 
     .section--buttons--item--upper,
     .section--buttons--item--low {
-        font-size: clamp(0.6rem, 2.8vw, 0.7rem);
-        width: clamp(7.5rem, 42vw, 9.4rem);
-        min-height: clamp(2.4rem, 12vw, 3.1rem);
+        font-size: 12px;
+        width: 9rem;
+        min-height: 3rem;
         padding: clamp(0.35rem, 1.8vw, 0.7rem) clamp(0.45rem, 2vw, 0.7rem);
     }
 
